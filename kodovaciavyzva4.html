@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodovacia vyzva 4</title>
+
+    <style>
+        img {
+            filter: contrast(50%) blur(1px);
+        }
+
+
+
+        /* pre umiestnenie textu v obrazku */
+        .container {
+            position: relative;
+            text-align: center;
+            font-size: 50px;
+            color: palevioletred;
+            text-shadow: 2px 2px 2px white;
+        }
+
+
+        .vlavo-dole {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+
+        .vlavo-hore {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+
+        .vpravo-hore {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+
+        .vpravo-dole {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+
+        .stred {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="mesto" style="width:100%;">
+        <div class="vlavo-dole">Vlavo dole</div>
+        <div class="vlavo-hore">Vlavo hore</div>
+        <div class="vpravo-hore">Vpravo hore</div>
+        <div class="vpravo-dole">Vpravo dole</div>
+        <div class="stred">V strede</div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

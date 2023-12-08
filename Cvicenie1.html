@@ -5,6 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cvicenie 1</title>
+
+
+
+
+    <style>
+        h1 {
+            color: blue;
+            width: fit content;
+            background-color: green;
+        }
+
+        /*.trieda-h2 {
+            color: orange;
+        } */
+
+        h2 {
+            color: orange;
+        }
+
+        .odstavec {
+
+            color: grey;
+        }
+
+        #tabulka-ludia th {
+            color: blueviolet;
+        }
+
+
+        li li {
+            color: red;
+        }
+
+        /*   .p1,
+        .p2 {
+            color: aqua; mozem aj takto  postupovat mu
+        } */
+    </style>
 </head>
 
 <body>
@@ -14,25 +52,30 @@
     Tato hodina byla skvělá a hodně nového jsem se toho naučil! V této praktické části výuky si procvičím tvorbu webové
     stránky, ve které použiji snad všechny značky, které jsem se doposud naučil.
 
-    <h2>Shrnutí značek</h2>
+    <h2 class="trieda-h2">Shrnutí značek</h2>
 
     <ul>
         <li> Značce se anglicky říkat tag a rozdělujeme je na párové a nepárové</li>
         <li> Seznamy se nejčastěji používají jako seřazené nebo neseřazené </li>
-        <li> Dále jsem se naučil: </li>
-        <ul>
-            <li> Tučné písmo značí značka <b>b</b> - anglicky <b>bold</b> </li>
-            <li> Podtržené písmo značí značka <b>u</b> - anglicky <bold>u</bold><u>nderline</u> </li>
-            <li> Zkosené písmo značí značka <b>i</b> - anglicky <bold>i</bold><i>talic</i> </li>
-            <li> Odstavce značí značka <b>p</b> - anglicky <b>p</b>aragraph </li>
-            <li> Dále také vím, že značky by se neměly křížit - i když prohlížeč dělá, co může a snaží se to napravit
-            </li>
-         </ul>
+        <li> Dále jsem se naučil:
+            <ul>
+
+                <li> Tučné písmo značí značka <b>b</b> - anglicky <b>bold</b> </li>
+                <li> Podtržené písmo značí značka <b>u</b> - anglicky <bold>u</bold><u>nderline</u>
+                </li>
+                <li> Zkosené písmo značí značka <b>i</b> - anglicky <bold>i</bold><i>talic</i> </li>
+                <li> Odstavce značí značka <b>p</b> - anglicky <b>p</b>aragraph </li>
+                <li> Dále také vím, že značky by se neměly křížit - i když prohlížeč dělá, co může a
+                    snaží se to napravit
+                </li>
+
+            </ul>
+
         <li> <del>ALE TO JEŠTĚ NENÍ VŠE!</del></li>
     </ul>
 
 
-    <table>
+    <table id="tabulka-ludia">
         <tr>
             <th> Meno </th>
             <th> Priezvisko </th>
@@ -66,11 +109,13 @@
 
     <h2>Nadpisy</h2>
 
-    <p>Celkem máme 6 úrovní nadpisu, kde 1. úroveň je největší a nejdůležitější, zatímco 6. úroveň nadpisů má velikost
+    <p class="odstavec">Celkem máme 6 úrovní nadpisu, kde 1. úroveň je největší a nejdůležitější, zatímco 6. úroveň
+        nadpisů má velikost
         písma menší než samotný text na stránce.
     </p>
 
-    <p>Pod nadpisy se mohou objevit například odstavce, jako například tento, které například popisují obsah dané
+    <p class="odstavec">Pod nadpisy se mohou objevit například odstavce, jako například tento, které například popisují
+        obsah dané
         sekce/kapitoly.</p>
 
     <h2>Takřka povinné prvky stránky</h2>
@@ -82,22 +127,22 @@
         <li> značka <b><i>body</i></b>, která obsahuje obsah stránky, který vidí uživatelé </li>
     </ol>
 
-<h1> Bonusové cvičení – HTML entity 🔥</h1>
+    <h1 id="h1-nadpis"> Bonusové cvičení – HTML entity 🔥</h1>
 
-Pokud potřebuji, aby webová stránka pouze zobrazila, ALE NEPOUŽILA, značku, např. <b>tučný text</b>. 
-Je nutné špičaté závorky zapsat pomocí tzv. HTML entit, protože <u>špičaté značky jsou v HTML speciální znaky.</u>
-<ul>
-    <li>Otevírací špičatá &lt; závorka se zapíše jako: <b>&</b><b>lt</b>
+    Pokud potřebuji, aby webová stránka pouze zobrazila, ALE NEPOUŽILA, značku, např. <b>tučný text</b>.
+    Je nutné špičaté závorky zapsat pomocí tzv. HTML entit, protože <u>špičaté značky jsou v HTML speciální znaky.</u>
+    <ul>
+        <li>Otevírací špičatá &lt; závorka se zapíše jako: <b>&</b><b>lt</b>
+            <ul>
+                <li><b>lt</b>je opět akronym z anglických slov <b>t</b>ess <b>t</b>han </li>
+            </ul>
+        <li>Uzavírací špičatá > závorka se zapíše jako: <b>&</b>&gt; </li>
         <ul>
-            <li><b>lt</b>je opět akronym z anglických slov <b>t</b>ess <b>t</b>han </li>
+            <li>gt je opět akronym z anglických slov greater than</li>
         </ul>
-    <li>Uzavírací špičatá > závorka se zapíše jako: <b>&</b>&gt; </li>
-        <ul>
-            <li>gt je opět akronym z anglických slov greater than</li> 
-        </ul>
-    <li>Výsledek pak vypadá: &lt;b&gt;tučný text&lt;/b&gt;</li>
+        <li>Výsledek pak vypadá: &lt;b&gt;tučný text&lt;/b&gt;</li>
 
-</ul>
+    </ul>
 
 
 

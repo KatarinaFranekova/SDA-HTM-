@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .obdelnik {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            /* margin: 10px; */
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            padding: 10px;
+        }
+
+        .polovicny-obdelnik {
+            width: 50%;
+            height: 50%;
+            border: 1px solid black;
+        }
+
+        html,
+        body {
+            height: 100;
+            /* vychozi velikost pisma: 16px na neteee */
+            font-size: 16px;
+            font-family: cursive;
+        }
+
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            /* rem  px = rem * vychozi hodnota px v html 
+                    pre very small je to 2*9px = 18 px */
+            font-size: 2rem;
+            /* 2 * 16 = 32 toto plati pre velkost medium v nasteveni chromu 
+            2 *  24 px = 48 px toto plati pre velkost very large v nastaveni chromu */
+        }
+
+        /* .polovicny-obdelnik {
+            font-size: 1.2rem;
+        }
+*/
+
+        .text-center {
+            border: 1px solid red;
+            width: 300px;
+            height: 80px;
+
+            /* horizontalny center textu */
+
+            text-align: right;
+            /* vertikalny center textu */
+
+            line-height: 30;
+
+
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body style="height:100%; margin: 0; background-color: rgb(170, 178, 167);">
+
+
+    <span style="color: rgb(101, 20, 182); box-shadow: 57px 89px 73px 0px rgba(0,0,0,1);">Lorem ipsusm</span>
+
+
+
+    <div class="polovicny-obdelnik">
+        obdelnik vnutri body
+    </div>
+
+
+    <div class="obdelnik">
+        AHOOOOOOJ
+
+        <div class="polovicny-obdelnik">
+
+        </div>
+
+    </div>
+
+
+    <div class="text-center">
+
+        Popis obdelnika Popis obdelnika Popis obdelnika Popis obdelnika
+        Popis obdelnika Popis obdelnika Popis obdelnika Popis obdelnika
+        Popis obdelnika Popis obdelnika Popis obdelnika Popis obdelnika
+        Popis obdelnika Popis obdelnika Popis obdelnika Popis obdelnika
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

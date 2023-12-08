@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .odstavec {
+            color: red;
+            font-weight: bold;
+            background-color: aqua;
+        }
+
+        /* p.odstavec {
+            color: red;
+            font-weight: bold;
+            background-color: aqua;
+        } 
+
+        alebo moze byt napr div.odstavec a aplikuje sa dany styl na div odstavce 
+*/
+
+        #h2-podnadpis {
+
+            color: green;
+
+        }
+
+        /* * {
+            font-weight: bold;
+            color: purple;
+
+        } */
+
+        /* pouziva sa na vychozi nastavenia webu napr, ale pre debugovaci ucely*/
+
+
+        .trieda1 {
+
+            color: yellow;
+
+
+        }
+
+
+        .trieda2 {
+
+            background-color: mediumspringgreen;
+        }
+
+
+        .trieda1.trieda2 {
+            font-family: sans-serif
+        }
+
+
+        .trieda1>.trieda2 {
+
+            color: pink;
+        }
+
+        .article-today {
+            /* ohranicenie: hrubka-ohranicenie typ-ohranicenia farba-hranicenia */
+            border: 0.05 cm solid black;
+        }
+
+
+        .article-today h3 {
+
+            color: blue;
+        }
+
+
+        [href="www.google.com"] {
+            color: orange;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-decoration: underline;
+        }
+
+        * {
+            color: purple !important;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <h1> Triedy</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate, veritatis sint earum voluptates
+        delectus saepe quaerat vitae reprehenderit. Itaque.
+    </p>
+
+
+    <h2 id="h2-podnadpis"> Trieda 2 </h2>
+
+    <p class="odstavec">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat voluptas asperiores, atque harum
+        molestias quibusdam doloremque assumenda qui similique!
+    </p>
+
+    <div class="odstavec">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laudantium ullam et non laborum voluptatem cum odio
+        molestiae mollitia deleniti.
+    </div>
+
+    <h2 style="color: blueviolet;"> Komplexne triedy </h2>
+
+    <p class="trieda1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat voluptas asperiores, atque harum
+        molestias quibusdam doloremque assumenda qui similique!
+
+        <span>
+
+            <i class="trieda2">
+                vnutri odstavce italic
+            </i>
+        </span>
+    </p>
+
+    <p class="trieda1 trieda2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat voluptas asperiores, atque harum
+        molestias quibusdam doloremque assumenda qui similique!
+    </p>
+
+
+    <h2> Clanky dnes</h2>
+    <article class="article-today">
+
+        <header>
+
+            <h3> Clanok o ekonomike</h3>
+        </header>
+
+        <p> Inflacia....................</p>
+
+    </article>
+
+
+
+    <h2> Clanky svet</h2>
+    <article class="article-today">
+
+        <header>
+
+            <h3> Clanok o YP</h3>
+        </header>
+
+        <p> Inflacia....................</p>
+
+
+
+        <a href="www.google.com">Google.com</a>
+
+
+
+
+    </article>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat voluptas asperiores, atque harum
+        molestias quibusdam doloremque assumenda qui similique!
+    </p>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
